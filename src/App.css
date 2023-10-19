@@ -35,33 +35,25 @@ select {
   font-size: 3rem;
   z-index: 999;
   cursor: pointer;
-  color: green;
   font-size: 40%;
 }
 
 .cards {
-  margin: 50px;
-  padding: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   border-radius: 5em !important;
-  background-color: #D5F3Fe;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card {
-
-  margin: 20px;
+  margin: 10px;
   transition: 0.3s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.button {
- /* Push the buttons to the bottom of the card container */
-}
 .card:hover {
-  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 1);
 }
 
 .btn {
@@ -140,8 +132,6 @@ html {
 	justify-content: space-around;
 
 	padding: 0 2rem;
-	background-color: var(--mainColor);
-	color: var(--textColor);
 }
 
 
@@ -167,7 +157,11 @@ nav {
 
 @media only screen and (max-width: 1024px) {
   .card{
-    margin: 10px;
+    margin: 5px;
+  }
+  .side{
+    margin-top:10px;
+    margin-bottom:10px; 
   }
   .header .nav-btn {
     visibility: visible;
@@ -246,7 +240,7 @@ nav {
 }
 
 .App-header {
-  background-color: #282c34;
+ 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -269,3 +263,41 @@ nav {
     transform: rotate(360deg);
   }
 }        
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  border-style: solid;
+  border-width: 10px;
+  border-color:white;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */

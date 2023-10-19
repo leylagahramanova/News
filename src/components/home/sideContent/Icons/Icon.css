@@ -1,0 +1,8 @@
+.btn:hover,
+.btn:focus {
+  opacity: 1.8;
+}
+
+.btn:active {
+  transform: scale(1.8);
+}
