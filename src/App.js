@@ -66,7 +66,7 @@ function App() {
         // Fetch data from the first API (news sources)
         const newsResponse = await fetch(
           'https://newsapi.org/v2/everything?q=bitcoin&apiKey=590f675c55854296aadc31a46177f964'
-        );
+        ); 
         const newsResult = await newsResponse.json();
 
         if (newsResult.sources && Array.isArray(newsResult.sources)) {
