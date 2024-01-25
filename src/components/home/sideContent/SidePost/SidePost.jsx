@@ -36,7 +36,9 @@ const SidePost = () => {
                 <img src={article.urlToImage} alt='' />
               </div>
               <div className='text'>
-                <h1 className='title'>{article.title.slice(0, 35)}...</h1>
+             <h1><a href={article.url} target="_blank" rel="noopener noreferrer" className='title'>
+                  {article.title.slice(0, 35)}...
+                </a></h1> 
               </div>
             </div>
           );
